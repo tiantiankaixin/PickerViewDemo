@@ -14,11 +14,11 @@
 {
     for (UIView *subView1 in self.subviews)
     {
-        if ([subView1 isKindOfClass:[UIPickerView class]])
+        if ([subView1 isKindOfClass:[UIPickerView class]])//取出UIPickerView
         {
             for(UIView *subView2 in subView1.subviews)
             {
-                if (subView2.frame.size.height < 1)
+                if (subView2.frame.size.height < 1)//取出分割线view
                 {
                     subView2.hidden = YES;
                 }

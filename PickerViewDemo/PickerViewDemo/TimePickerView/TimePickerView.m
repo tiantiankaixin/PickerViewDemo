@@ -8,6 +8,7 @@
 
 #import "TimePickerView.h"
 #import "PickerCell.h"
+#import "UIPickerView+malPicker.m"
 
 @interface TimePickerView()
 
@@ -51,17 +52,7 @@
 - (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view
 {
     PickerCell *cell = [PickerCell cellWithRow:row];
-    if (!self.lineIsHidden)
-    {
-        [self.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            
-            if (obj.frame.size.height < 1)
-            {
-                obj.backgroundColor = [UIColor clearColor];
-            }
-        }];
-    }
-    self.lineIsHidden = YES;
+    [pickerView clearSpearatorLine];
     return cell;
 }
 

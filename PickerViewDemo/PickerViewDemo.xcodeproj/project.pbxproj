@@ -19,6 +19,7 @@
 		68739B9E1CC7546B009C6840 /* PickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68739B9A1CC7546B009C6840 /* PickerCell.xib */; };
 		68739B9F1CC7546B009C6840 /* TimePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68739B9C1CC7546B009C6840 /* TimePickerView.m */; };
 		68739BA51CC758A1009C6840 /* UIDatePicker+myPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 68739BA41CC758A1009C6840 /* UIDatePicker+myPicker.m */; };
+		68739BAE1CC7725A009C6840 /* UIPickerView+malPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 68739BAD1CC7725A009C6840 /* UIPickerView+malPicker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		68739B9C1CC7546B009C6840 /* TimePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimePickerView.m; sourceTree = "<group>"; };
 		68739BA31CC758A1009C6840 /* UIDatePicker+myPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDatePicker+myPicker.h"; sourceTree = "<group>"; };
 		68739BA41CC758A1009C6840 /* UIDatePicker+myPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDatePicker+myPicker.m"; sourceTree = "<group>"; };
+		68739BAC1CC7725A009C6840 /* UIPickerView+malPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPickerView+malPicker.h"; sourceTree = "<group>"; };
+		68739BAD1CC7725A009C6840 /* UIPickerView+malPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPickerView+malPicker.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +165,8 @@
 				68739B9A1CC7546B009C6840 /* PickerCell.xib */,
 				68739BA31CC758A1009C6840 /* UIDatePicker+myPicker.h */,
 				68739BA41CC758A1009C6840 /* UIDatePicker+myPicker.m */,
+				68739BAC1CC7725A009C6840 /* UIPickerView+malPicker.h */,
+				68739BAD1CC7725A009C6840 /* UIPickerView+malPicker.m */,
 			);
 			path = TimePickerView;
 			sourceTree = "<group>";
@@ -301,6 +306,7 @@
 				68739BA51CC758A1009C6840 /* UIDatePicker+myPicker.m in Sources */,
 				68739B6C1CC75431009C6840 /* ViewController.m in Sources */,
 				68739B9D1CC7546B009C6840 /* PickerCell.m in Sources */,
+				68739BAE1CC7725A009C6840 /* UIPickerView+malPicker.m in Sources */,
 				68739B691CC75431009C6840 /* AppDelegate.m in Sources */,
 				68739B661CC75431009C6840 /* main.m in Sources */,
 			);
@@ -526,6 +532,7 @@
 				68739B901CC75431009C6840 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		68739B911CC75431009C6840 /* Build configuration list for PBXNativeTarget "PickerViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +541,7 @@
 				68739B931CC75431009C6840 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		68739B941CC75431009C6840 /* Build configuration list for PBXNativeTarget "PickerViewDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +550,7 @@
 				68739B961CC75431009C6840 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
