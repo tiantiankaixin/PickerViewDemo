@@ -10,8 +10,6 @@
 
 @interface UIPickerView (malPicker)
 
-@property (nonatomic, assign) BOOL mal_lineisHidden;
-
 - (void)clearSpearatorLine;
 
 @end
