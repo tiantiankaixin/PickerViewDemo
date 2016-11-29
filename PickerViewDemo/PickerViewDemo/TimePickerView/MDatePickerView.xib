@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MDatePickerView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KS2-kH-ej3">
+                    <rect key="frame" x="188" y="0.0" width="187" height="200"/>
+                </scrollView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q43-bl-Yqd">
+                    <rect key="frame" x="0.0" y="0.0" width="187.5" height="200"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="KS2-kH-ej3" secondAttribute="trailing" id="0uq-JT-VIZ"/>
+                <constraint firstAttribute="bottom" secondItem="KS2-kH-ej3" secondAttribute="bottom" id="A2Y-xQ-mzc"/>
+                <constraint firstItem="q43-bl-Yqd" firstAttribute="width" secondItem="KS2-kH-ej3" secondAttribute="width" id="MFw-AH-fSb"/>
+                <constraint firstItem="q43-bl-Yqd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eJK-sX-NEN"/>
+                <constraint firstItem="q43-bl-Yqd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hk1-Y8-g2C"/>
+                <constraint firstItem="KS2-kH-ej3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jfQ-tC-nnk"/>
+                <constraint firstAttribute="bottom" secondItem="q43-bl-Yqd" secondAttribute="bottom" id="xMQ-2h-ctN"/>
+                <constraint firstItem="KS2-kH-ej3" firstAttribute="leading" secondItem="q43-bl-Yqd" secondAttribute="trailing" id="yi4-FB-EuE"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="scrollView1" destination="q43-bl-Yqd" id="9Tx-tQ-fWE"/>
+                <outlet property="scrollView2" destination="KS2-kH-ej3" id="meN-Z4-C0V"/>
+            </connections>
+            <point key="canvasLocation" x="67.5" y="7"/>
+        </view>
+    </objects>
+</document>

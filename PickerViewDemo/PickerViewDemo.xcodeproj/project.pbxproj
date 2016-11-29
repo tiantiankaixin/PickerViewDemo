@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20DF3AC51DE5A14800D181DB /* MDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DF3AC41DE5A14800D181DB /* MDatePickerView.m */; };
+		20DF3AC71DE5A15300D181DB /* MDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20DF3AC61DE5A15300D181DB /* MDatePickerView.xib */; };
 		68739B661CC75431009C6840 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68739B651CC75431009C6840 /* main.m */; };
 		68739B691CC75431009C6840 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68739B681CC75431009C6840 /* AppDelegate.m */; };
 		68739B6C1CC75431009C6840 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68739B6B1CC75431009C6840 /* ViewController.m */; };
@@ -40,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20DF3AC31DE5A14800D181DB /* MDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDatePickerView.h; sourceTree = "<group>"; };
+		20DF3AC41DE5A14800D181DB /* MDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDatePickerView.m; sourceTree = "<group>"; };
+		20DF3AC61DE5A15300D181DB /* MDatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MDatePickerView.xib; sourceTree = "<group>"; };
 		68739B611CC75431009C6840 /* PickerViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickerViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68739B651CC75431009C6840 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		68739B671CC75431009C6840 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -167,6 +172,9 @@
 				68739BA41CC758A1009C6840 /* UIDatePicker+myPicker.m */,
 				68739BAC1CC7725A009C6840 /* UIPickerView+malPicker.h */,
 				68739BAD1CC7725A009C6840 /* UIPickerView+malPicker.m */,
+				20DF3AC31DE5A14800D181DB /* MDatePickerView.h */,
+				20DF3AC41DE5A14800D181DB /* MDatePickerView.m */,
+				20DF3AC61DE5A15300D181DB /* MDatePickerView.xib */,
 			);
 			path = TimePickerView;
 			sourceTree = "<group>";
@@ -274,6 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20DF3AC71DE5A15300D181DB /* MDatePickerView.xib in Resources */,
 				68739B741CC75431009C6840 /* LaunchScreen.storyboard in Resources */,
 				68739B9E1CC7546B009C6840 /* PickerCell.xib in Resources */,
 				68739B711CC75431009C6840 /* Assets.xcassets in Resources */,
@@ -302,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20DF3AC51DE5A14800D181DB /* MDatePickerView.m in Sources */,
 				68739B9F1CC7546B009C6840 /* TimePickerView.m in Sources */,
 				68739BA51CC758A1009C6840 /* UIDatePicker+myPicker.m in Sources */,
 				68739B6C1CC75431009C6840 /* ViewController.m in Sources */,
