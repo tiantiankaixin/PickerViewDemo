@@ -30,6 +30,7 @@ class ViewController: UIViewController,MPickerViewProtrol {
         self.view.addSubview(mPicker)
     }
     
+    //MARK: MPickerViewProtrol
     func m_noOfSections() -> Int {
         
         return 2
