@@ -20,7 +20,11 @@
             {
                 if (subView2.frame.size.height < 1)//取出分割线view
                 {
-                    subView2.hidden = YES;
+                    //subView2.hidden = YES;
+                    //[subView2 setBackgroundColor:[UIColor redColor]];
+                    UIView *redLine = [[UIView alloc] initWithFrame:subView2.bounds];
+                    redLine.backgroundColor = [UIColor redColor];
+                    [subView2 addSubview:redLine];
                 }
             }
         }
