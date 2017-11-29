@@ -8,6 +8,9 @@
 
 import UIKit
 
+///中间分割线颜色
+let KCenterLineHeight = CGFloat(0.5)
+
 protocol MPickerViewProtrol {
     
     /// 返回pickerview的列数
@@ -59,14 +62,15 @@ class MPickerView: UIView,UIScrollViewDelegate {
     var lineView:UIView{
         
         let lineView = UIView.init(frame: self.bounds)
+        lineView.backgroundColor = UIColor.clear
         lineView.height = self.rowHeight
         lineView.centerY = self.height / 2
-        let topline = UIView.init(frame: CGRect.init(x: 0, y: 0, width: self.width, height: 0.5))
+        let topline = UIView.init(frame: CGRect.init(x: 0, y: 0, width: self.width, height: KCenterLineHeight))
         topline.isUserInteractionEnabled = false
-        topline.backgroundColor = UIColor.black
-        let bottomline = UIView.init(frame: CGRect.init(x: 0, y: lineView.height, width: self.width, height: 0.5))
+        topline.backgroundColor = self.mProtrol!.m_centerLineColor()
+        let bottomline = UIView.init(frame: CGRect.init(x: 0, y: lineView.height - KCenterLineHeight, width: self.width, height: KCenterLineHeight))
         bottomline.isUserInteractionEnabled = false
-        bottomline.backgroundColor = UIColor.black
+        bottomline.backgroundColor = self.mProtrol!.m_centerLineColor()
         lineView.addSubview(topline)
         lineView.addSubview(bottomline)
         lineView.isUserInteractionEnabled = false
