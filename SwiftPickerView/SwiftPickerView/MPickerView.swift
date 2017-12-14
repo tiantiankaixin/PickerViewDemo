@@ -8,7 +8,7 @@
 
 import UIKit
 
-///中间分割线颜色
+///中间分割线高度
 let KCenterLineHeight = CGFloat(0.5)
 
 protocol MPickerViewProtrol {
