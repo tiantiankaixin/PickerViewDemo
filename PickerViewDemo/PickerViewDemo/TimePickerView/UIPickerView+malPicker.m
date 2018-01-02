@@ -16,7 +16,7 @@
         
         if (obj.frame.size.height < 1)
         {
-            [obj setBackgroundColor:[UIColor redColor]];
+            [obj setBackgroundColor:[UIColor clearColor]];
         }
     }];
 }
